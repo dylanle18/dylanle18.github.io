@@ -1,0 +1,32 @@
+.navbar {
+    background-color: $nav-color;
+    padding: 0% !important;
+}
+
+.navbar-nav {
+    .nav-link {
+        color: $text-color2 !important;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .active {
+        color: $primary-color !important;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.navbar-brand {
+    color: $text-color1 !important;
+    font-weight: 700;
+    span {
+        color: $secondary-color !important;
+    }
+}
+
+.logo {
+    height: 48px;
+}

@@ -1,0 +1,58 @@
+@import './variables';
+@import './presets';
+@import './navbar';
+
+.flat {
+    position: absolute;
+    right: 55vw;
+    bottom: 0;
+    height: 80%;
+    z-index: -1;
+}
+
+main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-width: 420px;
+    margin-left: -210px;
+    margin-top: -180px;
+    p {
+       color: $text-color2;
+       margin-bottom: 10px;
+       font-weight: 400;
+       font-size: larger;
+    }
+    #coop{
+        font-weight: 700;
+    }
+    a {
+        margin-right: 10px;
+        color: $text-color2;
+        &:hover {
+            color: $primary-color;
+            i {
+                transform: scale(1.1);
+            }
+        }
+        i {
+            transition: all 0.3s;
+        }
+    }
+}
+
+.name-title {
+    font-size: 72px;
+    font-weight: 700;
+    color: $text-color1;
+    span {
+        color: $secondary-color !important;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    main {
+        max-width: 320px;
+        margin-left: -160px;
+    }
+}
