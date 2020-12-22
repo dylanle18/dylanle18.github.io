@@ -109,4 +109,10 @@ main a i {
     margin-left: -160px;
   }
 }
+
+@media only screen and (max-height: 500px) {
+  main {
+    margin-top: -120px;
+  }
+}
 /*# sourceMappingURL=home.css.map */
