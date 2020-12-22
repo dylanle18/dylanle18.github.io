@@ -1,5 +1,6 @@
 @import './variables';
 @import './presets';
+@import './scrollbar';
 @import './navbar';
 
 .flat {
@@ -26,6 +27,10 @@ main {
     }
     #coop{
         font-weight: 700;
+        #cursor {
+            color: $primary-color;
+            font-weight: 300;
+        }        
     }
     a {
         margin-right: 10px;

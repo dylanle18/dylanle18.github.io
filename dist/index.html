@@ -19,7 +19,7 @@
         <!-- Nav -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <div class="navbar-brand" href="#"><img class="logo" src="./img/logo.png" alt="logo"> DYLAN<span>LE</span></div>
+                <a class="navbar-brand" href="./index.html"><img class="logo" src="./img/logo.png" alt="logo"> DYLAN<span>LE</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -40,13 +40,28 @@
             <div class="name-title">DYLAN<span>LE</span></div>
             <p id="location">Toronto ON, Canada</p>
             <p id="school">Computer Science, Ryerson University</p>
-            <p id="coop">Seeking Summer 2021 Co-Op Positions</p>
+            <p id="coop">Seeking Summer 2021 Co-Op Positions<span id="cursor">|</span></p>
             <a href="https://www.linkedin.com/in/dylanle18/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
             <a href="https://github.com/dylanle18" target="_blank"><i class="fab fa-github fa-3x"></i></a>
             <a href="mailto:dylanle18@outlook.com" target="_blank"><i class="fas fa-envelope fa-3x"></i></a>
         </main>
         <img class="flat" src="./img/flat.png" alt="flat illustration">
-
+        
+        <!-- Blinking Cursor Script -->
+        <script>
+            var cursor = true;
+            var speed = 750;
+            setInterval(() => {
+              if(cursor) {
+                document.getElementById('cursor').style.opacity = 0;
+                cursor = false;
+              }else {
+                document.getElementById('cursor').style.opacity = 1;
+                cursor = true;
+              }
+            }, speed);
+        </script>
+        
         <!-- Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>

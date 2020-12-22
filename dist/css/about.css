@@ -11,6 +11,26 @@ body {
   background-color: #f0f0f0;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #666666;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #833C0B;
+}
+
 .navbar {
   background-color: #ffffff;
   padding: 0% !important;

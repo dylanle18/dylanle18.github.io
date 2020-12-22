@@ -1,3 +1,53 @@
 @import './variables';
 @import './presets';
+@import './scrollbar';
 @import './navbar';
+
+.project-container {
+    background-color: $nav-color;
+    margin-top: 50px;
+    padding: 25px;
+}
+
+.project-msg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        color: $text-color1;
+    }
+    p {
+        color: $text-color2;
+        font-weight: 500;
+        font-size: large;
+    }
+}
+
+.project-img-container {
+    @extend .project-msg-container;
+    align-items: center;
+}
+
+.project-img {
+    width: 100%;
+}
+
+.project-links {
+    a {
+        color: $text-color2;
+        text-decoration: none;
+        margin-right: 20px;
+        &:hover {
+            color: $primary-color;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .project-links {
+        margin-bottom: 20px;
+    }
+}
