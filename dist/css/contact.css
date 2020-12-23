@@ -64,4 +64,70 @@ body {
 .logo {
   height: 48px;
 }
+
+.darkmode:hover {
+  color: #C45911 !important;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  margin-top: 50px;
+  padding-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.contact-container h1 span {
+  color: #833C0B;
+}
+
+.contact-container p {
+  color: #666666;
+  font-weight: 500;
+  font-size: large;
+  max-width: 570px;
+}
+
+.contact-container p a {
+  color: #C45911;
+  text-decoration: none;
+}
+
+.contact-container p a:hover {
+  text-decoration: underline;
+}
+
+.link-container a {
+  margin-right: 10px;
+  color: #666666;
+}
+
+.link-container a:hover {
+  color: #C45911;
+}
+
+.link-container a:hover i {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.link-container a i {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
 /*# sourceMappingURL=contact.css.map */

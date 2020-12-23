@@ -65,6 +65,10 @@ body {
   height: 48px;
 }
 
+.darkmode:hover {
+  color: #C45911 !important;
+}
+
 .about-container {
   background-color: #ffffff;
   margin-top: 50px;

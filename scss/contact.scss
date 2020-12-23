@@ -2,3 +2,50 @@
 @import './presets';
 @import './scrollbar';
 @import './navbar';
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    background-color: $nav-color;
+    margin-top: 50px;
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        color: $text-color1;
+        span {
+            color: $secondary-color;
+        }
+    }
+    p {
+        color: $text-color2;
+        font-weight: 500;
+        font-size: large;
+        max-width: 570px;
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.link-container {
+    a {
+        margin-right: 10px;
+        color: $text-color2;
+        &:hover {
+            color: $primary-color;
+            i {
+                transform: scale(1.1);
+            }
+        }
+        i {
+            transition: all 0.3s;
+        }
+    }
+}
