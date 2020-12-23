@@ -2,3 +2,61 @@
 @import './presets';
 @import './scrollbar';
 @import './navbar';
+
+.about-container {
+    background-color: $nav-color;
+    margin-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.section-container {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.section-msg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        color: $text-color1;
+    }
+    p {
+        color: $text-color2;
+        font-weight: 500;
+        font-size: large;
+    }
+}
+
+.section-img-container {
+    @extend .section-msg-container;
+    align-items: center;
+}
+
+.section-img {
+    padding-bottom: 25px;
+    width: 100%;
+}
+
+.last-section-img {
+    padding-bottom: 0px;
+}
+
+.left-img {
+    display: inline-flex;
+}
+.right-img {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .left-img {
+        display: none;
+    }
+    .right-img {
+        display: inline-flex;
+    }
+}
