@@ -65,10 +65,6 @@ body {
   height: 48px;
 }
 
-.darkmode:hover {
-  color: #C45911 !important;
-}
-
 .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
